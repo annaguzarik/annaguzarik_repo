@@ -38,13 +38,3 @@ sudo systemctl restart apache2
 # Check Apache2 status
 echo "Checking Apache2 status..."
 sudo systemctl status apache2 --no-pager
-
-# Display the public IP address (if available)
-PUBLIC_IP=$(curl -s http://checkip.amazonaws.com)
-if [ -n "$PUBLIC_IP" ]; then
-  echo "Apache2 installation is complete!"
-  echo "You can access the web page at: http://$PUBLIC_IP"
-else
-  echo "Apache2 installation is complete!"
-  echo "You can access the web page at: http://<your-server-ip>"
-fi
