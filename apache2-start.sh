@@ -11,6 +11,7 @@ sudo apt-get install -y apache2
 # Create a default web page
 echo "Creating default web page..."
 sudo bash -c 'cat <<EOF > /var/www/html/index.html
+<!DOCTYPE html>
 <html>
   <head>
     <title>Hello, World!</title>
